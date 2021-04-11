@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@font-face {
+  src: url(brixton/Brixton\ Bold.ttf);
+  font-family: "Brixton Bold";
+}
+
+@font-face {
+  src: url(brixton/Brixton\ Light.ttf);
+  font-family: "Brixton Light";
+}
+
+@font-face {
+  src: url(brixton/Brixton\ Medium.ttf);
+  font-family: "Brixton Medium";
+}
+
+body {
+  background-color: #ee5aba;
+}
+header a {
+  display: flex;
+  justify-content: center;
+  font-family: "Brixton Bold";
+  font-size: 5rem;
+  color: #96d2d9;
+  text-align: center;
+}
+
+header a:hover {
+  text-shadow: 3px 3px 0px #f2de79;
+}
+
+header a:active,
+header a:hover,
+header a:visited,
+header a:link {
+  text-decoration: none;
+}
+/*NAVIGATION*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+nav div {
+  font-family: "Brixton Medium";
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f2de79;
+  margin: 1rem;
+}
+
+nav div:hover {
+  transform: scale(1.2);
+  color: rgb(86, 224, 132);
+}
+
+hr {
+  display: block;
+  border: solid white;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+/*INTRO SECTION*/
+
+.sectionIntro {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: auto 25rem;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+q {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/*POSTS EXAMPLES*/
+
+h2,
+h3,
+h3 span,
+.readmore {
+  font-family: "Brixton Light";
+}
+h3,
+h3 span {
+  padding: 0;
+  margin: 0.5rem;
+  color: white;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0.5rem;
+  text-align: center;
+  color: white;
+}
+.postSnip {
+  background-color: #d07cf1;
+  -webkit-box-shadow: 5px 8px 0px 0px #f2de79;
+  box-shadow: 5px 8px 0px 0px #f2de79;
+  margin: 2rem;
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postSnip h2 {
+  color: rgb(255, 245, 102);
+}
+
+.postSnip:hover {
+  transform: scale(1.2);
+}
+
+.postsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a button:visited,
+a button:hover,
+a button:link,
+a button:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.myButton {
+  background-color: #44c767;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Brixton Bold";
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 1rem auto;
+  display: block;
+  width: 12rem;
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 1.1rem;
+}
+.myButton:hover {
+  background-color: blue;
+}
+
+/*FORM*/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  width: 30%;
+  color: white;
+  font-weight: bolder;
+  font-family: "Brixton Medium";
+  text-transform: uppercase;
+  margin: 0.1rem 0;
+  letter-spacing: 0.5rem;
+}
+
+textarea {
+  height: 20rem;
+}
+
+input[type="submit"] {
+  height: auto;
+  width: 10rem;
+  background-color: #d07cf1;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 28px;
+  margin: 0.5rem 0;
+  font-family: "Brixton Bold";
+  font-size: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #f2de79;
+  -webkit-box-shadow: 2px 5px 0px 0px #d07cf1;
+  box-shadow: 5px 5px 0px 0px #d07cf1;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+input,
+label,
+textarea {
+  display: block;
+  width: 20rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:active,
+.breadcrumbs li a:link,
+.breadcrumbs li a:visited {
+  text-decoration: none;
+}
+
+.breadcrumbs li a {
+  font-family: "Brixton Light";
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  color: #f2de79;
+  cursor: pointer;
+}
+.breadcrumbs li::after {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  transition: all 0.3s;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="black" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
+  background-repeat: no-repeat;
+}
+.breadcrumbs li:last-child::after {
+  background: none;
+}
+
+/*ARTICLE PAGE*/
+h1 {
+  font-family: "Brixton Medium";
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.usernamePost {
+  font-family: "Brixton Light";
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.contentPost {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.commentsHeader {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.commentsSection {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.commentsSpace {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.allComs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#commentForm {
+  margin: 0 2rem;
+}
+
+.email,
+.username,
+.content {
+  text-align: left;
+  margin: 0;
+}
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  /* background-color: white;
+  width: 20rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+  -webkit-box-shadow: 2px 5px 0px 0px #f2de79;
+  box-shadow: 5px 5px 0px 0px #f2de79;
+  margin: 0.1rem 0; */
+  color: black;
+  margin-top: 0.3rem;
+}
+
+.email,
+.username {
+  font-family: "Open Sans", sans-serif;
+}
+.username {
+  color: #d07cf1;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.email {
+  text-transform: lowercase;
+  color: black;
+  font-size: 0.9rem;
+  font-family: "Brixton Light";
+  letter-spacing: 0.1rem;
+  font-weight: 200;
+}
+
+#postSpace {
+  background-color: #96d2d9;
+  max-width: 40rem;
+  height: auto;
+  padding: 1rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 10px 0px 0px #f2de79;
+  box-shadow: 15px 12px 0px 0px #f2de79;
+}
+
+.headBig {
+  color: white;
+}
+
+.com {
+  font-size: 1rem;
+  background-color: white;
+  width: 20rem;
+  height: auto;
+  border-radius: 15px;
+  padding: 0.5rem;
+  -webkit-box-shadow: 2px 5px 0px 0px #f2de79;
+  box-shadow: 5px 5px 0px 0px #f2de79;
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sectionIntro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: auto 10rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header a {
+    font-size: 4rem;
+  }
+  .contentPost {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .sectionIntro {
+    margin: auto 2rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .allComs {
+    flex-direction: column;
+  }
+
+  .commentsHeader,
+  .subCom {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .commentsSection {
+    align-self: center;
+  }
+
+  #commentForm {
+    margin: 1.5rem 0;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header a {
+    font-size: 3rem;
+  }
+  nav div {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #postSpace {
+    background-color: #96d2d9;
+    width: 18rem;
+  }
+
+  .contentPost {
+    font-size: 0.9rem;
+  }
+}

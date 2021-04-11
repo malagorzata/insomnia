@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header><a href="index.html">GET SOME UNDERSTANDING</a></header>
+
+    <nav>
+      <div>PRE-UNDERSTANDING</div>
+      <div>POST-UNDERSTANDING</div>
+    </nav>
+    <hr />
+
+    <ol class="breadcrumbs">
+      <li><a href="index.html">Main Understanding Page</a></li>
+      <li><a href="article.html"> Post</a></li>
+    </ol>
+    <section id="postSpace">
+      <h1></h1>
+      <h2 class="usernamePost">by <span></span></h2>
+      <p class="contentPost"></p>
+    </section>
+      <template class="commentsTemplate">
+        
+        <section class="commentsSpace">
+          <article class="com">
+            <h3 class="username"></h3>
+            <h2 class="email"></h2>
+
+            <p class="content"></p>
+          </article>
+        </section>
+      </template>
+    </div>
+
+    <br />
+    <hr />
+
+    <h1 class="commentsHeader">COMMENTS</h1>
+<div class="allComs">
+    <main class="commentsSection">
+      
+    </main>
+    <form id="commentForm">
+      <h1 class="headBig">Submit your comment</h1>
+
+      <label for="comment_username">Username</label>
+      <input type="text" required name="username" id="comment_username" />
+
+      <label for="comment_email">Your e-mail</label>
+      <input type="email" required name="email" id="comment_email" />
+
+      <label for="comment_content">Message</label>
+      <textarea
+        type="text"
+        required
+        name="content"
+        id="comment_content"
+      ></textarea>
+
+      <input type="submit" value="Save comment" />
+    </form>
+  </div>
+    <script src="article.js"></script>
+  </body>
+</html>
