@@ -144,13 +144,13 @@ a button:active {
 }
 
 .myButton {
-  background-color: #44c767;
+  background-color: #f2de79;
   border-radius: 28px;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: #d07cf1;
   font-family: "Brixton Bold";
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
   margin: 1rem auto;
   display: block;
@@ -160,7 +160,8 @@ a button:active {
   padding-top: 1.1rem;
 }
 .myButton:hover {
-  background-color: blue;
+  background-color: #d07cf1;
+  color: #f2de79;
 }
 
 /*FORM*/
